@@ -1,0 +1,15 @@
+安装教程
+1.进入mysql解压目录的bin文件夹下
+运行 D:\mysql-5.7.17-winx64\bin>mysqld install
+无密码命令      mysqld --initialize-insecure
+启动mysql 服务 net start mysql
+ 登陆 mysql -u root -p
+ 
+ 
+ （1）进入mysql数据库：
+
+mysql> use mysql;
+Database changed
+
+（2）给root用户设置新密码，蓝色部分自己输入：
+mysql> （版本5.5）update user set password=password("新密码") where user="root";
